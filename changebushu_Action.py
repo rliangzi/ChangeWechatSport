@@ -88,7 +88,7 @@ def main(user):
     response = requests.post(url, data=data, headers=head).json()
     result = response['message'] + f"修改步数: {step}  " 
     print(result)
-    ding_push(user + "=>" +result)
+    #ding_push(user + "=>" +result)
     return result
  
 
