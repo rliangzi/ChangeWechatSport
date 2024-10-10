@@ -88,7 +88,7 @@ def main(user):
     response = requests.post(url, data=data, headers=head).json()
     result = response['message'] + f"修改步数: {step}  " 
     print(result)
-    #ding_push(user + "=>" +result)
+    ding_push(user + "=>" +result)
     return result
  
 
@@ -141,8 +141,8 @@ if __name__ == "__main__":
     step = str(randint(int(15000), int(25000)))
     # step = os.environ['STEP']
     # step = str(randint(10123, 12302)) 
-    #ding_access_token = os.environ['DING_ACCESS_TOKEN']
-    #ding_secret = os.environ['DING_SECRET']
+    ding_access_token = '7a17a9dd44c3f714807c798e13cba583e8ded90a28d079aa0b72eba1254c6e28'
+    ding_secret = 'SEC3baad25e2a15021e600829cdaa7428239742a23e58f9d63b13a2497806ab421e'
     user_list = users.split('#')
     for user in user_list:
         main(user)
