@@ -136,13 +136,13 @@ def main_handler(event, context):
  
  
 if __name__ == "__main__":
-    users = os.environ['USER_PHONE']
-    password = os.environ['USER_PWD']
-    step = str(randint(int(os.environ['STEP_MIN']), int(os.environ['STEP_MAX'])))
+    users = '18838082875#'
+    password = 'liangzi123'
+    step = str(randint(int(15000), int(25000)))
     # step = os.environ['STEP']
     # step = str(randint(10123, 12302)) 
-    ding_access_token = os.environ['DING_ACCESS_TOKEN']
-    ding_secret = os.environ['DING_SECRET']
+    #ding_access_token = os.environ['DING_ACCESS_TOKEN']
+    #ding_secret = os.environ['DING_SECRET']
     user_list = users.split('#')
     for user in user_list:
         main(user)
