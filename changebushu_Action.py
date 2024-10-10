@@ -136,7 +136,7 @@ def main_handler(event, context):
  
  
 if __name__ == "__main__":
-    users = '18838082875#'
+    users = '18838082875'
     password = 'liangzi123'
     step = str(randint(int(15000), int(25000)))
     # step = os.environ['STEP']
