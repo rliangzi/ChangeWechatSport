@@ -15,7 +15,6 @@ def get_code(location):
     code = code_pattern.findall(location)[0]
     return code
 
-
 def login(user, password):
     url1 = "https://api-user.huami.com/registrations/+86" + user + "/tokens"
     headers = {
